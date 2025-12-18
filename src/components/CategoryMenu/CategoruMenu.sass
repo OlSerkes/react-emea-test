@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *
+@use '../../styles/mixins' as *
+
+#products .category-menu
+    display: flex
+    align-items: center
+    gap: 12px
+    @include responsive-size("margin-bottom", 8, 28, 320, 1400)
+    padding: 0 10px
+    overflow-x: auto
+    &::-webkit-scrollbar
+        display: none
+    &__btn
+        @include responsive-size("font-size", 12, 18, 320, 1400)
+        color: $primary-color
+        flex-shrink: 0
+        white-space: nowrap
+
+@media ( min-width: 768.98px )
+    #products .category-menu
+        justify-content: center
+        overflow: visible

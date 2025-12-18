@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *
+@use '../../styles/mixins' as *
+
+.products
+    &__header
+        @include responsive-size("margin-top", 5, 86, 320, 1400)
+        @include responsive-size("margin-bottom", 5, 58, 320, 1400)
+        padding: 10px
+        p
+            span
+                @include responsive-size("font-size", 10, 14, 320, 1400)
+                color: $primary-color
+                letter-spacing: 0.5em

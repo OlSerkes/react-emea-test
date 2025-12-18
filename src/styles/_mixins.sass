@@ -1,0 +1,22 @@
+@mixin responsive-size($property, $minSize, $maxSize, $minWidth, $maxWidth)
+    #{$property}: #{$minSize}px
+    @supports (font-size: clamp(1px, 1vw, 2px))
+        $A: ($maxSize - $minSize) / ($maxWidth - $minWidth) * 100
+        $B: $minSize - ($A * $minWidth / 100)
+        $calcValue: unquote("calc(#{$A}vw + #{$B}px)")
+        #{$property}: clamp(#{$minSize}px, #{$calcValue}, #{$maxSize}px)
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover

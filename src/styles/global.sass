@@ -1,0 +1,55 @@
+@use './variables' as *
+@use './mixins' as *
+@use './buttons' as *
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+
+*
+    box-sizing: border-box
+
+body
+    font-family: "Inter", sans-serif
+    padding: 0
+    margin: 0
+
+#products
+    width: 100%
+    height: auto
+    position: relative
+    overflow: hidden
+    background: #fff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        line-height: 1.2
+        text-align: left
+        text-transform: none
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+    img
+        display: block
+        max-width: 100%
+        height: auto
+        opacity: 1
+        margin: 0 auto
+        &:hover
+            opacity: 1
+    h1
+        line-height: 1.7
+        color: $title-color
+        font-weight: 700
+        text-align: center
+        @include responsive-size("font-size", 20, 48, 320, 1400)
+    h3
+        line-height: 1.5
+        color: $title-color
+        font-weight: 600
+        @include responsive-size("font-size", 14, 24, 320, 1400)
+    p
+        line-height: 1.9
+        color: $primary-color
+        font-weight: 400
+        text-align: center
+        @include responsive-size("font-size", 11, 19, 320, 1400)

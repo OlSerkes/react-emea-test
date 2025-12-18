@@ -1,0 +1,60 @@
+@use '../../styles/variables' as *
+@use '../../styles/mixins' as *
+
+#products-cards
+    padding: 0 10px
+    margin-bottom: 15px
+
+.products-slider
+    flex: 1
+    min-height: 0
+    position: relative
+    .slick-list, .slick-track
+        display: flex
+        align-items: stretch
+    .slick-list
+        padding-bottom: 50px
+    .slick-slide
+        display: flex !important
+        align-items: stretch !important
+        height: auto !important
+        padding: 0 10px
+        > div
+            display: flex
+            flex: 1
+    .slick-prev, .slick-next
+        z-index: 99
+        top: auto
+        bottom: -10px
+        width: 30px
+        height: 30px
+        &:before
+            color: #24355F
+            font-size: 30px
+            width: 30px
+            height: 30px
+    .slick-prev
+        left: 15px
+    .slick-next
+        right: 15px
+    .slick-dots
+        bottom: 10px
+        width: 100%
+        display: flex !important
+        justify-content: center
+        margin: 0
+        padding: 0
+
+.slick-dots li.slick-active button
+    &:before
+        border: 1px solid #000
+        border-radius: 50%
+
+@media (max-width: 480px)
+    .products-slider
+        .slick-dots
+            display: none
+        .slick-prev
+            left: 25%
+        .slick-next
+            right: 25%
