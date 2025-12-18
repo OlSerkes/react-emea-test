@@ -44,24 +44,25 @@ The goal of this task is to demonstrate:
 
 ### Project structure
 
-src/
-├── api/
-│ └── fetchProduct.js
-├── components/
-│ ├── CategoryMenu/
-| ├── Header/
-│ ├── Loader/
-│ ├── ProductCard/
-│ └── ProductSlider/
-├── pages/
-│ └── Home.jsx
-├── styles/
-| ├── \_buttons.sass
-│ ├── \_variables.sass
-│ ├── \_mixins.sass
-│ └── global.sass
-├── App
-└── main.jsx
+src
+
+- api/
+  - fetchProduct.js
+- components/
+  - CategoryMenu/
+  - Header/
+  - Loader/
+  - ProductCard/
+  - ProductSlider/
+- pages/
+  - Home.jsx
+- styles/
+  - \_buttons.sass
+  - \_variables.sass
+  - \_mixins.sass
+  - global.sass
+- App
+- main.jsx
 
 ### Installation and run
 
