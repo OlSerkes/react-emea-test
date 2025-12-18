@@ -17,7 +17,7 @@ Figma: https://www.figma.com/design/gC5kMZTTEKykbZnHrrc8KV
 The goal of this task is to demonstrate:
 
 - Component-based architecture
-- Working with external APIs
+- Working with external APIs (load more than 20 products)
 - Basic loading and error handling
 - Display products inside a carousel
 - Support basic responsiveness
@@ -32,8 +32,8 @@ The goal of this task is to demonstrate:
 
 ### Links
 
-- Solution URL: [GitHub Pages](https://github.com/OlSerkes/phps-sncare-hx368942)
-- Live Site URL: [Live site URL](https://olserkes.github.io/phps-sncare-hx368942/)
+- Solution URL: [GitHub Pages](https://github.com/OlSerkes/react-emea-test)
+- Live Site URL: [Live site URL](https://olserkes.github.io/react-emea-test/)
 
 ### Built with
 
